@@ -9,8 +9,10 @@ global.createTimeTrigger = createTimeTrigger;
 // every 10 minutes to fetch new mails
 const FETCH_INTERVAL_MINUTES = 10;
 const SEARCH_QUERY = process.env.SEARCH_QUERY;
-
 export async function main() {
+  if (!SEARCH_QUERY) {
+    throw new Error("SEARCH_QUERY is not set");
+  }
   const doneMailIds = getDoneMailIds();
   const results = search(SEARCH_QUERY);
   console.log("search result count: " + results.length);
