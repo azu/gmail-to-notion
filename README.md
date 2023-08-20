@@ -42,7 +42,7 @@ npm run deploy
 
 ## Notionのデータベース構造
 
-- [src/notion.ts](./src/notion.ts)を参照
+- [src/notion.ts](./src/notion.ts)を参照して変更する
 - プロパティ
   - タスク名
   - Projects

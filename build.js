@@ -9,6 +9,7 @@ require("esbuild")
     outfile: "dist/index.js",
     plugins: [GasPlugin],
     define: {
+      "process.env.SEARCH_QUERY": JSON.stringify(process.env.SEARCH_QUERY),
       "process.env.NOTION_TOKEN": JSON.stringify(process.env.NOTION_TOKEN),
       "process.env.NOTION_DATABASE_ID": JSON.stringify(process.env.NOTION_DATABASE_ID),
       "process.env.NOTION_PROJECTS_ID": JSON.stringify(process.env.NOTION_PROJECTS_ID)
