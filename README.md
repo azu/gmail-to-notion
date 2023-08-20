@@ -2,16 +2,19 @@
 
 定期的にGmailを検索し、検索結果をNotionに記録するGoogle Apps Script.
 
+Search Gmail periodically and record the search results in Notion.
+
 ```mermaid
 graph TD;
-  GAS-->|検索|Gmail;
-  Gmail-->|検索結果|GAS;
-  GAS-->|記録|Notion;
+  GAS-->|Search|Gmail;
+  Gmail-->|Search Result|GAS;
+  GAS-->|Record|Notion;
 ```
 
 ## ユースケース
 
 - 特定のラベルをつけたメールを検索し、その結果をNotionに記録する
+- Record the search results of emails with specific labels in Notion
 
 ## Setup
 
@@ -29,9 +32,9 @@ touch .env
    - [`op run`](https://developer.1password.com/docs/cli/reference/commands/run)で読み込んで利用することを想定している
 
 ```
-# 検索クエリ
+# Search Query
 SEARCH_QUERY="{label:A OR label:B}"
-# Notionの設定
+# Notion Token
 NOTION_TOKEN="secret_XXXXXXXXXXX"
 NOTION_DATABASE_ID="xxxxxxxxxxxxxxxxxxxxx"
 NOTION_PROJECTS_ID="xxxxxxxxxxxxxxxxxxxxx"
