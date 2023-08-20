@@ -1,6 +1,6 @@
 # Gmail to Notion
 
-定期的にGmailの検索し、検索結果をNotionに記録する
+定期的にGmailを検索し、検索結果をNotionに記録する
 
 ## ユースケース
 
