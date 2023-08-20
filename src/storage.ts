@@ -5,7 +5,6 @@ type SaveMail = {
 const STORAGE_SIZE_LIMIT = 1000;
 export const getDoneMailIds = (): SaveMail[] => {
   try {
-    // Get the value for the user property 'DISPLAY_UNITS'.
     const userProperties = PropertiesService.getUserProperties();
     const sentMailIds = userProperties.getProperty("SENT_MAILS");
     return sentMailIds ? JSON.parse(sentMailIds) : [];
