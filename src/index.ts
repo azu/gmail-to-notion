@@ -7,13 +7,12 @@ global.main = main;
 global.createTimeTrigger = createTimeTrigger;
 
 // every 10 minutes to fetch new mails
-export const FETCH_INTERVAL_MINUTES = 10;
+const FETCH_INTERVAL_MINUTES = 10;
+const SEARCH_QUERY = `{label:GTD/Action Required OR label:GTD/Waiting OR label:GTD/Read Later}`;
 
 export async function main() {
   const doneMailIds = getDoneMailIds();
-  const results = search(
-    `{label:GTD/Action Required OR label:GTD/Waiting OR label:GTD/Read Later}`
-  );
+  const results = search(SEARCH_QUERY);
   console.log("search result count: " + results.length);
   const newMails = results.filter(result => {
     const id = result.getId();
