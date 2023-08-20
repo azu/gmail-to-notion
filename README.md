@@ -4,6 +4,12 @@ Gmailの検索結果をNotionに記録する
 
 ## 設定
 
+```
+NOTION_TOKEN="secret_XXXXXXXXXXX"
+NOTION_DATABASE_ID="xxxxxxxxxxxxxxxxxxxxx"
+NOTION_PROJECTS_ID="xxxxxxxxxxxxxxxxxxxxx"
+```
+
 - `.env` に記録する
 - `op run`で読み込んで利用する
 
