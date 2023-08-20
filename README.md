@@ -18,6 +18,7 @@ graph TD;
 1. claspでGoogle Apps Scriptのプロジェクトを作成する
 
 ```bash
+npm ci
 npx clasp login
 npx clasp create --rootDir ./dist
 cp appsscript.json ./dist/
