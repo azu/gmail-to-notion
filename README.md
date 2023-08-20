@@ -54,6 +54,7 @@ npm run deploy
 - プロパティ
   - タスク名
   - Projects
+  - URL
 
 ## License
 
