@@ -2,6 +2,13 @@
 
 定期的にGmailを検索し、検索結果をNotionに記録するGoogle Apps Script.
 
+```mermaid
+graph TD;
+  GAS-->|検索|Gmail;
+  Gmail-->|検索結果|GAS;
+  GAS-->|記録|Notion;
+```
+
 ## ユースケース
 
 - 特定のラベルをつけたメールを検索し、その結果をNotionに記録する
