@@ -54,3 +54,7 @@ npm run deploy
 - プロパティ
   - タスク名
   - Projects
+
+## License
+
+MIT
