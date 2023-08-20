@@ -15,7 +15,7 @@ graph TD;
 
 ## Setup
 
-1. claspでGoogle Apps Scriptのプロジェクトを作成する
+1. [clasp](https://github.com/google/clasp)でGoogle Apps Scriptのプロジェクトを作成する
 
 ```bash
 npm ci
