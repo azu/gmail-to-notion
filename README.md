@@ -1,6 +1,10 @@
 # Gmail to Notion
 
-Gmailの検索結果をNotionに記録する
+定期的にGmailの検索し、検索結果をNotionに記録する
+
+## ユースケース
+
+- 特定のラベルをつけたメールをNotionに記録する
 
 ## 設定
 
@@ -13,7 +17,7 @@ NOTION_PROJECTS_ID="xxxxxxxxxxxxxxxxxxxxx"
 - `.env` に記録する
 - `op run`で読み込んで利用する
 
-## Gmail to Notion
+## 仕組み
 
 - 検索して、その結果をNotionに記録
 - 一度記録したものは、再度記録しない
