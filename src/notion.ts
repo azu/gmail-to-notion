@@ -19,7 +19,6 @@ export const sendToNotion = ({
   };
 
   UrlFetchApp.fetch("https://api.notion.com/v1/pages", {
-    muteHttpExceptions: true,
     method: "post",
     headers: headers,
     payload: JSON.stringify({
