@@ -8,7 +8,7 @@ global.createTimeTrigger = createTimeTrigger;
 
 // every 10 minutes to fetch new mails
 const FETCH_INTERVAL_MINUTES = 10;
-const SEARCH_QUERY = `{label:GTD/Action Required OR label:GTD/Waiting OR label:GTD/Read Later}`;
+const SEARCH_QUERY = process.env.SEARCH_QUERY;
 
 export async function main() {
   const doneMailIds = getDoneMailIds();

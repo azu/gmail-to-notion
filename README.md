@@ -21,6 +21,9 @@ touch .env
    - [`op run`](https://developer.1password.com/docs/cli/reference/commands/run)で読み込んで利用することを想定している
 
 ```
+# 検索クエリ
+SEARCH_QUERY="{label:A OR label:B}"
+# Notionの設定
 NOTION_TOKEN="secret_XXXXXXXXXXX"
 NOTION_DATABASE_ID="xxxxxxxxxxxxxxxxxxxxx"
 NOTION_PROJECTS_ID="xxxxxxxxxxxxxxxxxxxxx"
@@ -37,3 +40,9 @@ npm run deploy
 - 検索して、その結果をNotionに記録
 - 一度記録したものは、再度記録しない
 
+## Notionのデータベース構造
+
+- [src/notion.ts](./src/notion.ts)を参照
+- プロパティ
+  - タスク名
+  - Projects
