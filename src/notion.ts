@@ -12,6 +12,9 @@ export const sendToNotion = ({
   const relation_id = process.env.NOTION_PROJECTS_ID;
   console.log("add to notion", title);
 
+  // Notion size limit
+  // https://developers.notion.com/reference/request-limits#size-limits
+  const sliceBody = body.slice(0, 2000);
   const headers = {
     "Content-Type": "application/json; charset=UTF-8",
     "Authorization": `Bearer ${notion_token}`,
@@ -70,7 +73,7 @@ export const sendToNotion = ({
           object: "block",
           type: "paragraph",
           paragraph: {
-            rich_text: [{ type: "text", text: { content: body } }]
+            rich_text: [{ type: "text", text: { content: sliceBody } }]
           }
         }
       ]
