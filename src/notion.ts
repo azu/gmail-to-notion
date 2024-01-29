@@ -1,11 +1,13 @@
 export const sendToNotion = ({
   title,
   body,
-  url
+  url,
+  tags
 }: {
   title: string;
   body: string;
   url: string;
+  tags: string[];
 }) => {
   const notion_token = process.env.NOTION_TOKEN;
   const database_id = process.env.NOTION_DATABASE_ID;
@@ -46,6 +48,13 @@ export const sendToNotion = ({
         },
         URL: {
           url: url
+        },
+        Tags: {
+          multi_select: tags.map(tag => {
+            return {
+              name: tag
+            };
+          })
         }
       },
       children: [

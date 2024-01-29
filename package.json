@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rimraf build dist",
     "lint": "eslint --fix --no-error-on-unmatched-pattern src/ test/",
-    "build": "op run --env-file=.env node build.js",
+    "build": "op run --env-file=.env node build.js && cp appsscript.json dist/",
     "test": "",
     "deploy": "npm run lint && npm run test && npm run build && clasp push"
   },
