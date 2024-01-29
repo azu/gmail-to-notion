@@ -38,6 +38,8 @@ SEARCH_QUERY="{label:A OR label:B}"
 NOTION_TOKEN="secret_XXXXXXXXXXX"
 NOTION_DATABASE_ID="xxxxxxxxxxxxxxxxxxxxx"
 NOTION_PROJECTS_ID="xxxxxxxxxxxxxxxxxxxxx"
+# 送信したメールを記録するかどうか
+IS_SAVE_IN_SENT=true
 ```
 
 3. `npm run deploy`でデプロイする
