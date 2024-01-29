@@ -58,6 +58,9 @@ npm run deploy
   - タスク名
   - Projects
   - URL
+  - Tags
+    - Multi-selectのタグ
+    - `Gmail::<ラベル名>`の形式で記録される
 
 ## License
 
