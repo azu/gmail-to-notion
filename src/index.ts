@@ -9,7 +9,7 @@ global.createTimeTrigger = createTimeTrigger;
 // every 10 minutes to fetch new mails
 const FETCH_INTERVAL_MINUTES = 10;
 const SEARCH_QUERY = process.env.SEARCH_QUERY;
-const isSaveInSent = process.env.SAVE_IN_SENT === "true";
+const isSaveInSent = process.env.IS_SAVE_IN_SENT === "true";
 const searchToNotion = async () => {
   if (!SEARCH_QUERY) {
     throw new Error("SEARCH_QUERY is not set");
