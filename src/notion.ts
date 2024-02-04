@@ -28,6 +28,10 @@ export const sendToNotion = ({
     headers: headers,
     payload: JSON.stringify({
       parent: { database_id: database_id },
+      icon: {
+        type: "emoji",
+        emoji: "📥"
+      },
       properties: {
         タスク名: {
           title: [
