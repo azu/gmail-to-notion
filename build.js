@@ -10,6 +10,7 @@ require("esbuild")
     plugins: [GasPlugin],
     define: {
       "process.env.SEARCH_QUERY": JSON.stringify(process.env.SEARCH_QUERY),
+      "process.env.IS_SAVE_IN_SENT": JSON.stringify(process.env.IS_SAVE_IN_SENT),
       "process.env.NOTION_TOKEN": JSON.stringify(process.env.NOTION_TOKEN),
       "process.env.NOTION_DATABASE_ID": JSON.stringify(process.env.NOTION_DATABASE_ID),
       "process.env.NOTION_PROJECTS_ID": JSON.stringify(process.env.NOTION_PROJECTS_ID)
